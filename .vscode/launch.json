@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch findVaultPath",
+            "type": "node",
+            "request": "launch",
+            "args": [
+                "${workspaceFolder}/findVaultPath.ts",
+                "--key=^RDS_DB_NAME",
+                "--token=${env:VAULT_TOKEN}",
+                "--url=${env:VAULT_URL}",
+                "--csv=output.csv",
+                "-c"
+            ],
+            "runtimeArgs": [
+                "-r", 
+                "ts-node/register",
+                "-r",
+                "dotenv/config"
+            ],
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector",
+            "console": "integratedTerminal"
+        }
+    ]
+}

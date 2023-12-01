@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/yargs": "^17.0.32",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "name": "find-vault-path-by-keys",
+  "version": "1.0.0",
+  "main": "findVaultPath.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node findVaultPath.ts",
+    "start:dev": "ts-node -r dotenv/config findVaultPath.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/csv-write-stream": "^2.0.3",
+    "csv-write-stream": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "node-vault": "^0.10.2",
+    "yargs": "^17.7.2"
+  }
+}
